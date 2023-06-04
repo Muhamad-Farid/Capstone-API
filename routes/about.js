@@ -1,0 +1,12 @@
+// about.js
+
+const express = require('express');
+const router = express.Router();
+
+const aboutMessage = 'Aplikasi Pendeteksi Kualitas Biji Kopi adalah solusi inovatif yang dirancang khusus untuk memberikan pengalaman terbaik kepada para penggemar kopi dalam mengevaluasi kualitas biji kopi. Kami percaya bahwa kualitas biji kopi sangat penting untuk menciptakan secangkir kopi yang sempurna, dan inilah mengapa kami menciptakan aplikasi ini. \nDengan menggunakan teknologi terbaru dalam pengenalan gambar dan analisis sensorik, Aplikasi Pendeteksi Kualitas Biji Kopi memberikan kemampuan unik kepada pengguna untuk mengukur dan memahami kualitas biji kopi mereka dengan lebih mendalam.Aplikasi ini menyediakan alat yang diperlukan untuk mengambil foto biji kopi dan menghasilkan laporan analisis yang rinci.\nMelalui analisis visual yang canggih, aplikasi kami dapat menilai berbagai aspek penting dari biji kopi, termasuk ukuran, warna, bentuk, dan keadaan fisik umum.Ini membantu pengguna dalam menentukan apakah biji kopi mereka memenuhi standar kualitas yang diinginkan.\nSelain itu, Aplikasi Pendeteksi Kualitas Biji Kopi juga memberikan informasi tentang profil rasa biji kopi yang dievaluasi.Dengan menggunakan algoritma yang canggih, aplikasi kami dapat menganalisis tingkat keasaman, kekentalan, aroma, serta nuansa rasa yang dapat diharapkan dari biji kopi yang diuji.\nKami juga memahami bahwa preferensi pengguna dalam hal rasa kopi sangat berbeda - beda.Oleh karena itu, Aplikasi Pendeteksi Kualitas Biji Kopi kami menawarkan rekomendasi pemanggangan yang sesuai berdasarkan jenis biji kopi yang dievaluasi dan preferensi pribadi pengguna.Hal ini memungkinkan pengguna untuk menghasilkan secangkir kopi yang disesuaikan dengan selera mereka sendiri.\nTim di balik Aplikasi Pendeteksi Kualitas Biji Kopi berkomitmen untuk menyediakan pengalaman pengguna yang luar biasa.Kami terus mengembangkan aplikasi ini dengan pembaruan reguler dan berusaha untuk memberikan fitur - fitur baru yang bermanfaat bagi pengguna kami.\nUnduh Aplikasi Pendeteksi Kualitas Biji Kopi sekarang dan jadilah bagian dari pengalaman yang memuaskan dalam mengeksplorasi dan memahami kualitas biji kopi.Temukan potensi rasa sejati dari biji kopi Anda dan nikmatilah sensasi unik yang hanya bisa ditemukan dalam secangkir kopi yang berkualitas tinggi.';
+
+router.get('/', (req, res) => {
+    res.send(aboutMessage);
+});
+
+module.exports = router;
