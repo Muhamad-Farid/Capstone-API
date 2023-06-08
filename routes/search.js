@@ -177,36 +177,46 @@ router.get('/', (req, res) => {
         coffeeDrink.title.toLowerCase().includes(query.toLowerCase())
     );
 
-    const searchResults = {
-        coffeeTypes: filteredCoffeeTypes.map(coffeeType => {
+    const count = filteredCoffeeTypes.length + filteredCoffeeRoasts.length + filteredBrewingMethods.length + filteredCoffeeDrinks.length;
+
+    const results = [
+        ...filteredCoffeeTypes.map(coffeeType => {
             return {
                 title: coffeeType.title,
-                description: coffeeType.description
+                description: coffeeType.description,
+                image: coffeeType.image
             };
         }),
-        coffeeRoasts: filteredCoffeeRoasts.map(coffeeRoast => {
+        ...filteredCoffeeRoasts.map(coffeeRoast => {
             return {
                 title: coffeeRoast.title,
-                description: coffeeRoast.description
+                description: coffeeRoast.description,
+                image: coffeeRoast.image
             };
         }),
-        coffeeBrewingMethods: filteredBrewingMethods.map(brewingMethod => {
+        ...filteredBrewingMethods.map(brewingMethod => {
             return {
                 title: brewingMethod.title,
-                description: brewingMethod.description
+                description: brewingMethod.description,
+                image: brewingMethod.image
             };
         }),
-        coffeeDrinks: filteredCoffeeDrinks.map(coffeeDrink => {
+        ...filteredCoffeeDrinks.map(coffeeDrink => {
             return {
                 title: coffeeDrink.title,
-                description: coffeeDrink.description
+                description: coffeeDrink.description,
+                image: coffeeDrink.image
             };
         })
+    ];
+
+    const searchResults = {
+        count,
+        results
     };
 
     res.json(searchResults);
 });
-
 
 // Export the router
 module.exports = router;
