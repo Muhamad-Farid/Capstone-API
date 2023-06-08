@@ -182,6 +182,8 @@ router.get('/', (req, res) => {
     const results = [
         ...filteredCoffeeTypes.map(coffeeType => {
             return {
+                id: coffeeType.id,
+                type: 0,
                 title: coffeeType.title,
                 description: coffeeType.description,
                 image: coffeeType.image
@@ -189,6 +191,8 @@ router.get('/', (req, res) => {
         }),
         ...filteredCoffeeRoasts.map(coffeeRoast => {
             return {
+                id: coffeeRoast.id,
+                type: 1,
                 title: coffeeRoast.title,
                 description: coffeeRoast.description,
                 image: coffeeRoast.image
@@ -196,6 +200,8 @@ router.get('/', (req, res) => {
         }),
         ...filteredBrewingMethods.map(brewingMethod => {
             return {
+                id: brewingMethod.id,
+                type: 2,
                 title: brewingMethod.title,
                 description: brewingMethod.description,
                 image: brewingMethod.image
@@ -203,6 +209,8 @@ router.get('/', (req, res) => {
         }),
         ...filteredCoffeeDrinks.map(coffeeDrink => {
             return {
+                id: coffeeDrink.id,
+                type: 3,
                 title: coffeeDrink.title,
                 description: coffeeDrink.description,
                 image: coffeeDrink.image
