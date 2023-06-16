@@ -9,7 +9,7 @@ npm install
 ## Usage
 
 ```sh
-npm run app.js
+node app.js
 ```
 
 ## Author
