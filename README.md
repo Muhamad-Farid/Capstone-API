@@ -25,7 +25,7 @@ Make sure you have all the required dependencies installed before running the se
 To clone this repository to your local machine, use the following command:
 
 ```sh
-git clone https://github.com/your-username/bean-grader-backend.git
+git clone https://github.com/Muhamad-Farid/Capstone-API.git
 ```
 
 Replace `your-username` with your GitHub username.
