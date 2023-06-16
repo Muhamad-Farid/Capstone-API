@@ -40,15 +40,9 @@ Replace `your-username` with your GitHub username.
 
 Feel free to contact the authors if you have any questions or suggestions regarding the project.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
-We would like to acknowledge the following resources for their inspiration and contribution to this project:
-
-- [BeanGrader Frontend](https://github.com/exampleuser/bean-grader-frontend)
+We would like to thank the entire "C23-PS128" team for their contribution to this project.
 
 ## Status
 
