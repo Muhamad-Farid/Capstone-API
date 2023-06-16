@@ -1,6 +1,10 @@
-# Welcome to BeanGrader Backend API 
+# BeanGrader Backend API
 
-## Install
+This repository contains the backend API for the BeanGrader application.
+
+## Installation
+
+To install the necessary dependencies, run the following command:
 
 ```sh
 npm install
@@ -8,14 +12,44 @@ npm install
 
 ## Usage
 
+To start the server and run the backend API, use the following command:
+
 ```sh
 node app.js
 ```
 
-## Author
+Make sure you have all the required dependencies installed before running the server.
+
+## Cloning the Repository
+
+To clone this repository to your local machine, use the following command:
+
+```sh
+git clone https://github.com/your-username/bean-grader-backend.git
+```
+
+Replace `your-username` with your GitHub username.
+
+## Authors
 
 👤 **Muhamad Farid**
-- Github: [@Muhamad-Farid](https://github.com/Muhamad-Farid)
+- GitHub: [@Muhamad-Farid](https://github.com/Muhamad-Farid)
 
-👤 **Akhmad Nur Yasin**
-- Github: [@akhmadnuryasin](https://github.com/akhmadnuryasin)
+👤 **Akhmad Nuryasin**
+- GitHub: [@akhmadnuryasin](https://github.com/akhmadnuryasin)
+
+Feel free to contact the authors if you have any questions or suggestions regarding the project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+We would like to acknowledge the following resources for their inspiration and contribution to this project:
+
+- [BeanGrader Frontend](https://github.com/exampleuser/bean-grader-frontend)
+
+## Status
+
+The project is currently in active development.
